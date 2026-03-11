@@ -1,0 +1,24 @@
+run = "pnpm dev"
+
+[nix]
+channel = "stable-24_05"
+
+[languages.typescript]
+languageServer = "typescript-language-server"
+
+[deployment]
+run = ["pnpm", "run", "build"]
+
+[packager]
+language = "nodejs"
+
+[packager.build]
+command = "pnpm install"
+
+[hidden]
+hidden = [
+  ".next",
+  "node_modules",
+  "pnpm-lock.yaml",
+  "**/.turbo"
+]

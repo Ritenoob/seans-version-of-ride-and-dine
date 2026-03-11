@@ -1,0 +1,24 @@
+{
+  "name": "ridendine",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "e2e": "playwright test",
+    "dev:web": "turbo dev --filter=@ridendine/web",
+    "dev:admin": "turbo dev --filter=@ridendine/admin",
+    "build:web": "turbo build --filter=@ridendine/web",
+    "build:admin": "turbo build --filter=@ridendine/admin"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "turbo": "^2.3.0",
+    "typescript": "^5.6.3"
+  },
+  "packageManager": "pnpm@9.14.2",
+  "engines": {
+    "node": ">=18"
+  }
+}

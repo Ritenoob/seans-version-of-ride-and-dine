@@ -1,0 +1,58 @@
+ridendine/
+│
+├── apps/
+│   ├── web/                # Customer-facing PWA
+│   │   ├── app/
+│   │   │   ├── (routes)
+│   │   │   │   ├── page.tsx
+│   │   │   │   ├── marketplace/
+│   │   │   │   ├── cook/[slug]/
+│   │   │   │   ├── cart/
+│   │   │   │   ├── checkout/
+│   │   │   │   ├── tracking/
+│   │   │   │   └── account/
+│   │   │
+│   │   ├── components/
+│   │   ├── lib/
+│   │   │   ├── supabaseClient.ts
+│   │   │   ├── api/
+│   │   │   ├── hooks/
+│   │   │   └── utils/
+│   │   ├── styles/
+│   │   └── .env.local
+│   │
+│   ├── admin/              # Business dashboard
+│   │   ├── app/
+│   │   │   ├── dashboard/
+│   │   │   │   ├── page.tsx
+│   │   │   │   ├── chefs/
+│   │   │   │   ├── meals/
+│   │   │   │   ├── orders/
+│   │   │   │   ├── drivers/
+│   │   │   │   ├── promos/
+│   │   │   │   └── analytics/
+│   │   │
+│   │   ├── components/
+│   │   ├── lib/
+│   │   │   ├── supabaseClient.ts
+│   │   │   ├── services/
+│   │   │   └── utils/
+│   │   └── .env.local
+│
+├── packages/
+│   ├── shared/             # Shared types & utilities
+│   │   ├── types/
+│   │   │   ├── chef.ts
+│   │   │   ├── dish.ts
+│   │   │   ├── order.ts
+│   │   │   └── driver.ts
+│   │   └── constants/
+│
+├── supabase/
+│   ├── migrations/
+│   │   └── 0001_init.sql
+│   └── seed.sql
+│
+├── pnpm-workspace.yaml
+├── package.json
+└── turbo.json (if using turbo)

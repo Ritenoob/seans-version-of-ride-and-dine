@@ -1,0 +1,23 @@
+{
+  "name": "@ridendine/mobile-customer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build:web": "pnpm -C ../../apps/web build",
+    "cap:add:android": "pnpm exec cap add android",
+    "cap:add:ios": "pnpm exec cap add ios",
+    "cap:sync:prod": "node -e \"if(!process.env.CAP_SERVER_URL){console.error('CAP_SERVER_URL is required for production sync');process.exit(1)}\" && pnpm run build:web && pnpm exec cap sync",
+    "cap:sync": "pnpm exec cap sync",
+    "cap:open:android": "pnpm exec cap open android",
+    "cap:open:ios": "pnpm exec cap open ios",
+    "cap:run:android": "pnpm exec cap run android",
+    "cap:run:ios": "pnpm exec cap run ios"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/cli": "^6.0.0",
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/geolocation": "^6.0.0",
+    "@capacitor/ios": "^6.0.0"
+  }
+}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Ride &amp; Dine Chef</string>
+    <string name="title_activity_main">Ride &amp; Dine Chef</string>
+    <string name="package_name">com.ridendine.chef</string>
+    <string name="custom_url_scheme">com.ridendine.chef</string>
+</resources>
