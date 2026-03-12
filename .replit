@@ -4,7 +4,7 @@ run = "cd apps/web && pnpm dev -- --port 3000"
 channel = "stable-24_05"
 
 [languages.typescript]
-languageServer = { start = "typescript-language-server --stdio" }
+languageServer = "typescript-language-server"
 
 [deployment]
 run = ["bash", "-lc", "cd apps/web && pnpm build && pnpm start -- --port 3000"]
