@@ -22,3 +22,6 @@ hidden = [
   "pnpm-lock.yaml",
   "**/.turbo"
 ]
+
+[agent]
+expertMode = true
